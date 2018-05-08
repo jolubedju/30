@@ -14,7 +14,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('images/riddle.jpg');
-    min-height: 100%;
+    min-height: 60%;
+}
+#formulario{
+	margin-left:20%;
 }
 </style>
 <body>
@@ -45,14 +48,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>1. El número</b></h1>
-    <p>Tendrás que introducir el número correcto de 6 cifras para pasar a la siguiente prueba</p>
+    <h1 class="w3-jumbo"><b>6. El que busca encuentra</b></h1>
+    <p>Introduce el nombre del país y la marca, esta última con mayúsculas y separado por un espacio.</p>
   </header>
 
  
 
-	<form action="../musica">
-		  <p>Introduce las 6 cifras:</p> <input id="choose" name="i_like" pattern="204862|masterkey" required/>
+	<form id="formulario" action="../relatividad">
+		  <p>País: <input id="choose" name="i_like" pattern="Chile|masterkey" required/></p>
+		  <p>Marca: <input id="choose" name="i_like" pattern="Coca Cola|masterkey" required/></p>
 		  <input type="submit">
 		</form>
 

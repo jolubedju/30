@@ -1,129 +1,146 @@
-<!DOCTYPE HTML>
-<!--
-	Projection by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Projection by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<title>The Riddle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/riddle.jpg');
+    min-height: 100%;
+}
+body{
+}
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
+input {
+border: none;
+background: #3a7999;
+color: #f2f2f2;
+padding: 10px;
+font-size: 18px;
+border-radius: 5px;
+position: relative;
+box-sizing: border-box;
+transition: all 500ms ease;
+}
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<header>
-						<h1>Bienvenida a The Riddle</h1>
-					</header>
+button:before {
+content:”;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 0px;
+height: 42px;
+background: rgba(255,255,255,0.3);
+border-radius: 5px;
+transition: all 2s ease;
+}
+</style>
+<body>
 
-					<div class="flex ">
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
 
-						<div>
-							<span class="icon fa-car"></span>
-							<h3>Sé rápida</h3>
-						</div>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
 
-						<div>
-							<span class="icon fa-camera"></span>
-							<h3>Usa todos tus recursos</h3>
-						</div>
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
-						<div>
-							<span class="icon fa-bug"></span>
-							<h3>Cuidado con las trampas</h3>
-						</div>
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-					</div>
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:50px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Bienvenida a The Riddle</b></h1>
+    <p>Estás a punto de comenzar una aventura..</p>
+  </header>
 
-					<footer>
-						<a href="lince/index.html" class="button">Empecemos</a>
-					</footer>
-				</div>
-			</section>
+ 
 
+  <!-- About Section -->
+  <div >
+    <h2>Introducción</h2>
+    <hr class="w3-opacity">
+    <p>De los creadores de la campaña de tele5 "12 meses, 12 causas", llega esta versión customizada para una persona muy muy especial para todos nosotros: "30 años, 30 adivinanzas".
+	Y es que ante la imposibilidad de poder dar los tan tradicionales, como merecidos tirones de orejas, hemos tenido que encontrar una manera de hacerte llegar tu regalo de manera telemática y que además seas digna merecedora de él.</p><p>
+	...y es que 30 años no se cumplen todos los días, y es por ello que nos hemos juntado tus seres más allegados para crearte una obra maestra del desconcierto, sacando unas poquitas de neuronas y transofrmándolas en unos divertidos juegos que te van a llevar a conseguir tu tan anhelado regalo.</p><p>
+	Como no queremos que sea demasiado trabajoso para ti, te vamos a racionar las tareas. Así cada mañana recibirás un mensaje de alguien que te quiere mucho y te dará la llave para poder continuar por donde hayas parado.</p><p>
+	No te desesperes. El camino también es viaje, y el jugar cada día también será parte de tu regalo, para que no te quejes y no pienses que no pensamos en ti. Como te gustan los regalos por adelantado este regalo ya te lo damos hoy.</p><p>
+	Pásalo bien y descubre poco a poco quienes participamos a la vez que ganas cultura, acumulas estrés y quemas neuronas. Feliz Domingo 13 de mayo, junto con este, 3 días para tu cumpleaños.
+    </p>
+	</br>
+		</br>
 
-		<!-- Three -->
-			<section id="three" class="wrapper align-center">
-				<div class="inner">
-					<div class="flex flex-2">
-						<article>
-							<div class="image round">
-								<img src="images/pic01.jpg" alt="Pic 01" />
-							</div>
-							<header>
-								<h3>Lorem ipsum<br /> dolor amet nullam</h3>
-							</header>
-							<p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />consequat  egestas augue vulputate.</p>
-							<footer>
-								<a href="#" class="button">Learn More</a>
-							</footer>
-						</article>
-						<article>
-							<div class="image round">
-								<img src="images/pic02.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h3>Sed feugiat<br /> tempus adipicsing</h3>
-							</header>
-							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
-							<footer>
-								<a href="#" class="button">Learn More</a>
-							</footer>
-						</article>
-					</div>
-				</div>
-			</section>
+			</br>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
+			
+       
+  <!-- End About Section -->
+  </div>
+	<form action="10/">
+    <input type="submit" value="Al turroon!!" />
+	</form>
 
-					<h3>Get in touch</h3>
+ 
+  
 
-					<form action="#" method="post">
+  
+<!-- END PAGE CONTENT -->
+</div>
 
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type="submit"></li>
-						</ul>
-					</form>
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-					<div class="copyright">
-						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-					</div>
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
 
-				</div>
-			</footer>
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
 
-	</body>
+</body>
 </html>

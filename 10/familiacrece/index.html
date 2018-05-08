@@ -14,7 +14,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('images/riddle.jpg');
-    min-height: 100%;
+    min-height: 60%;
 }
 </style>
 <body>
@@ -45,14 +45,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>1. El número</b></h1>
-    <p>Tendrás que introducir el número correcto de 6 cifras para pasar a la siguiente prueba</p>
+    <h1 class="w3-jumbo"><b>10. Qué tiempos!</b></h1>
+    <p>Introduce el nombre del personaje con mayúsculas y separado por un espacio.</p>
   </header>
 
  
-
-	<form action="../musica">
-		  <p>Introduce las 6 cifras:</p> <input id="choose" name="i_like" pattern="204862|masterkey" required/>
+<audio controls>
+  <source src="images/familia.ogg" type="audio/ogg">
+  <source src="images/familia.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+	<form action="../../20">
+		  <p>Nombre: <input id="choose" name="i_like" pattern="Michael Grant|masterkey" required/></p>
 		  <input type="submit">
 		</form>
 

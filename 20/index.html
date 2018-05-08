@@ -16,6 +16,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-image: url('images/riddle.jpg');
     min-height: 100%;
 }
+
+#demo{
+	text-align: center;
+	font-size: 60px;
+}
+#form{
+	margin-left:40%;
+}
+
 </style>
 <body>
 
@@ -29,7 +38,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
     <i class="fa fa-remove"></i>
   </a>
-<div class="w3-bar-block w3-center">
+  <div class="w3-bar-block w3-center">
     <a href="https://jolubedju.github.io/30/" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
     <a href="https://jolubedju.github.io/30/10" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Dia 1</a>
     <a href="https://jolubedju.github.io/30/20" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Dia 2</a>
@@ -45,14 +54,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>1. El número</b></h1>
-    <p>Tendrás que introducir el número correcto de 6 cifras para pasar a la siguiente prueba</p>
+    <h1 class="w3-jumbo"><b>DIA 2</b></h1>
+    <p id="demo"></p>
   </header>
 
  
 
-	<form action="../musica">
-		  <p>Introduce las 6 cifras:</p> <input id="choose" name="i_like" pattern="204862|masterkey" required/>
+	<form action="code" id="form" >
+		  <p>Introduce la contraseña:</p> <input id="choose" name="i_like" pattern="a mi lado|masterkey" required/>
 		  <input type="submit">
 		</form>
 
@@ -92,6 +101,36 @@ function closeNav() {
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 14, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

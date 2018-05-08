@@ -14,7 +14,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('images/riddle.jpg');
-    min-height: 100%;
+	width:40%;
+	height:40%;
+	margin-left:10%;
+	margin-top:10%;
+
+}
+#form{
+	margin-left:40%;
 }
 </style>
 <body>
@@ -45,14 +52,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>1. El número</b></h1>
-    <p>Tendrás que introducir el número correcto de 6 cifras para pasar a la siguiente prueba</p>
+    <h1 class="w3-jumbo"><b>15. Escanea... pero no te esperes un descuento del McDonald</b></h1>
+    <p>Tendrás que introducir el lugar donde se encuentra la imagen para pasar a la siguiente prueba</p>
   </header>
 
  
 
-	<form action="../musica">
-		  <p>Introduce las 6 cifras:</p> <input id="choose" name="i_like" pattern="204862|masterkey" required/>
+	<form action="../fruta" id="form">
+		  <p>Lugar:</p> <input id="choose" name="i_like" pattern="Palau|Palau de la musica|Palau de la música|masterkey" required/>
 		  <input type="submit">
 		</form>
 
