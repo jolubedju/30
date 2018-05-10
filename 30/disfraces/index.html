@@ -14,7 +14,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('images/riddle.jpg');
-    min-height: 100%;
+	width:65%;
+	min-height:100%;
+	margin-left:15%;
 }
 #form{
 	margin-top:-7%;
@@ -48,22 +50,65 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>21. Lo que faltaba... Definiciones!!</b></h1>
-    <p>Introduce el nombre que recibe:<br/>
-	1. El olor que desprende la tierra después de llover tras mucho tiempo de sequía.<br/>
-	2. Los rayos del sol atravesando un bosque.</p>
+  <header class="w3-container w3-center" style="padding:60px 16px" id="home">
+    <h1 class="w3-jumbo"><b>24. Fiesta de disfraces!!!</b></h1>
+    <p>Tendrás que completar la tabla correctamente para pasar a la siguiente prueba</p>
+	<p>Hay cuatro personas sentadas a la mesa para comer… pero esto parece una fiesta de disfraces!!</br>Una de ellas lleva una gorra de pato, otra una corona, la tercera un gorro pirata, y la última un gorrocóptero!! Pero esto no acaba aquí, el resto de prendas tendrás que adivinar tú donde hay que situarlas.</p>
+	<p>Los accesorios son: "Puro", "Gafas azules", "Gafas de buzo" y "Parche"</br>En la ropa llevan "Cuello frondoso", "Bufanda de Griffindor", "Lazo" y "Pinza" </br> Además cada uno está tomando un postre diferente, que son "Starbucks", "Tarta", "Muffin" y "Donut" </p>
   </header>
 
  
+<form action="../disfraces2">
+	 <table   border="1" align="center">
+	 <tr>
+       
+          <th> </th>
+          <th>Persona n1</th>
+		  <th>Persona n2</th>
+		  <th>Persona n3</th>
+		  <th>Persona n4</th>
+    
+       </tr>
+<tr>
+       
+          <th>Gorros</th>
+          <td><img src="images/tabla2.jpg" border="1" alt="asdf" ></td>
+		  <td><img src="images/tabla.jpg" border="1" alt="asdf" ></td>
+		  <td><img src="images/tabla4.jpg" border="1" alt="asdf" ></td>
+		  <td><img src="images/tabla3.jpg" border="1" alt="asdf" ></td>
+    
+       </tr>
+<tr>
+    
+         <th>Accesorios</th>
+          <td><input name="accesorio" type="text" size="11" maxlength="35" pattern="Parche|masterkey" required/>
+		  <td><input name="accesorio" type="text" size="11" maxlength="35" pattern="Gafas azules|masterkey" required/>
+		  <td><input name="accesorio" type="text" size="11" maxlength="35" pattern="Puro|masterkey" required/>
+		  <td><input name="accesorio" type="text" size="11" maxlength="35" pattern="Gafas de buzo|masterkey" required/>
 
-	<form id="form" action="../peliculas">
-		  <p>Nombre 1: <input id="choose" name="i_like" pattern="Petricor|masterkey" required/>
-		  <p>Nombre 2: <input id="choose" name="i_like" pattern="Komorebi|masterkey" required/></br></br>
+      </tr>
+<tr>
+         <th>Ropa</th>
+         <td><input name="ropa" type="text" size="11" maxlength="35" pattern="Cuello frondoso|masterkey" required/>
+		 <td><input name="ropa" type="text" size="11" maxlength="35" pattern="Bufanda de Griffindor|masterkey" required/>
+		 <td><input name="ropa" type="text" size="11" maxlength="35" pattern="Pinza|masterkey" required/>
+		 <td><input name="ropa" type="text" size="11" maxlength="35" pattern="Lazo|masterkey" required/>
+		 
 
-		  <input type="submit"></p>
-		</form>
+      </tr>
+<tr>
+       <th>Postres</th>
+       <td><input name="postre" type="text" size="11" maxlength="35" pattern="Tarta|masterkey" required/>
+	   <td><input name="postre" type="text" size="11" maxlength="35" pattern="Donut|masterkey" required/>
+	   <td><input name="postre" type="text" size="11" maxlength="35" pattern="Starbucks|masterkey" required/>
+	   <td><input name="postre" type="text" size="11" maxlength="35" pattern="Muffin|masterkey" required/>
 
+    </tr>
+
+</table>
+</br>
+       <input type="submit" id="form">
+</form>
  
   
 
